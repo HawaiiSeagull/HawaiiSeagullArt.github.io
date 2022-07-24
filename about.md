@@ -1,8 +1,6 @@
 ---
 layout: post
-title: About
+title: About Me
 ---
 
-This is an example page!
-
-Actually, it has the same layout of a post...
+Hey! Welcome to my page. I’m currently in Fine Art major at the University of Delaware. I specialize in illustration and animation. 
