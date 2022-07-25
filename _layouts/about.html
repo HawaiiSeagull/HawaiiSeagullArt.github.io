@@ -1,0 +1,48 @@
+---
+layout: test
+---
+
+<style>
+    .background{
+        /* background-image: url('../images/background.JPG'); */
+    }   
+</style>
+
+{% if site.theme_config.show_navbar == true %}
+{% include horizontal_list.html collection=site.data.home.navbar_entries %}
+<div class="dashed"></div>
+{% endif %}
+
+<h1 class="post-title">{{ page.title }}</h1>
+
+<div class="about-me">
+    <div class="selfie" >
+        <img src="../images/selfie.jpg" alt="selfie">
+    </div>
+    <div class="intro">
+        {{ content }}
+    </div>
+</div>
+
+<div class="artistStatement">
+    <h2>Artist Statement</h2>
+    <p>
+        My inspiration usually comes from moments; it may be sudden clarity at 3:00 AM, or when I am daydreaming. 
+        This creativity has translated to my academic courses, which I have used to gain experience with each new project… 
+        I want my work to be accepted and desired by the audience drawn to my work. I started to watch Japanese animation when I was in elementary school, 
+        and it has inspired me to create animation and illustrations since.
+    </p>
+
+    <p>
+        I would like to share my ideas and concepts with those who have similar interests.
+         Fan art is one area I take particular interest in when I communicate with others using my art, especially by sharing fan art works on my social media. 
+         I mainly use Procreate as it allow me to save my work anytime and anywhere.
+    </p>
+
+    <p>
+        Recording my personal life and feelings is the main reason why I create artwork. 
+        I want to record the moments in my life that I don't want to forget. 
+        Though my interests may change and develop over time, I will be able to use my art to remember those important moments.
+    </p>
+</div>
+

@@ -1,0 +1,19 @@
+---
+layout: test
+---
+
+{% if site.theme_config.show_navbar == true %}
+{% include horizontal_list.html collection=site.data.home.navbar_entries %}
+<div class="dashed"></div>
+{% endif %}
+
+<h1 class="post-title">{{ page.title }}</h1>
+<div class="socials">
+    <a href="https://www.instagram.com/hawaii_seagull/" class="fa fa-instagram"></a>
+    <a href="https://vimeo.com/user98318111" class="fa fa-vimeo"></a>
+    <a href="https://twitter.com/HawaiiSeagull" class="fa fa-twitter"></a>
+</div>
+<div class="contactMe">
+    {{ content }}
+    <a href = "mailto: bwshao18@gmail.com">bwshao18@gmail.com</a>
+</div>

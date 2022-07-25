@@ -1,18 +1,48 @@
 ---
-layout: default
+layout: test
 ---
+<style>
+    .background{
+        background-image: url('../images/background.JPG');
+        /* background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        opacity: 0.95; */
+    }
+    /* .title{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      height: 6em;
+      color: #dbfbe4;
+      opacity: 1;
+    }
+    ul.horizontal-list li a {
+      color: #012101c5;
+      font-weight: bolder;
+      opacity: 1;
+      font-size:large;
+    }
+    ul.horizontal-list li :hover {
+      color: #4d5a52;
+    } */
+</style>
+
 
 <header>
 {% if site.theme_config.show_navbar == true %}
-  {% include horizontal_list.html collection=site.data.home.navbar_entries %}
-  <div class="dashed"></div>
+{% include horizontal_list.html collection=site.data.home.navbar_entries %}
+<div class="dashed"></div>
 {% endif %}
 
-  <!-- <h1>{{ site.title }}</h1>
-  {% if site.theme_config.show_description == true %}
-    <p>{{ site.description }}</p>
-  {% endif %} -->
+<h1 class="home"></h1>
+{% if site.theme_config.show_description == true %}
+    <p class="home">{{ site.description }}</p>
+{% endif %}
 </header>
+
+
 
 <!-- {{ content }}
 

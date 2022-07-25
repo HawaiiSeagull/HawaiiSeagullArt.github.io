@@ -11,8 +11,17 @@ ul.horizontal-list {
   }
 
   li a {
-    text-decoration: none;
-    font-weight: normal
+    color: #f09199;
+    font-weight: bolder;
+    opacity: 1;
+    font-size:large;
+    text-decoration: auto;
+  }
+
+  li :hover {
+    color: #ffdcdc;
+    text-decoration: underline;
+
   }
 
 }
